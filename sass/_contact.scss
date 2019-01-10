@@ -1,0 +1,96 @@
+/* -- Contact styling
+---------------------------------- -- */
+
+.p-contact{
+    &.main {
+        padding-bottom: 0;
+    }
+}
+
+.contact-us {
+    .contact-info {
+        div[class^="col-"] {
+            margin-bottom: 30px;
+        }
+        .content {
+            height: 100%;
+            border: 1px solid $grey-border-color;
+            @include border-radius($radius);
+            padding: 4rem 1.5rem;
+            .icon-container {
+                width: 9rem;
+                height: 9rem;
+                background: #f9fafb;
+                @include border-radius(50%);
+                margin: 0 auto 2.5rem;
+                line-height: 9rem;
+                i {
+                    font-size: 4rem;
+                    line-height: 9rem;
+                    display: block;
+                }
+            }
+            h3 {
+                margin-bottom: .6rem;
+                color: $theme-color;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                a {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.location-map {
+    padding-bottom: 0;
+    .map-tab-wrapper {
+        padding-top: 5rem;
+        .tab-container {
+            &.type-1 {
+                position: relative;
+                .nav-tabs {
+                    max-width: 620px;
+                    position: absolute;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    z-index: 9;
+                    .nav-item {
+                        .nav-link {
+                            padding: 2rem 1.5rem 1.2rem;
+                            i::before{
+                                color: $light-grey-txt;
+                            }
+                            span {
+                                font-weight: 400;
+                            }
+                            &:hover{
+                                i::before{
+                                    color: $theme-color;
+                                }
+                                span {
+                                    color: $theme-color;
+                                }
+                            }
+                            &.active {
+                                i::before{
+                                    color: $theme-color;
+                                }
+                                span {
+                                    color: $theme-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    height: 500px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}

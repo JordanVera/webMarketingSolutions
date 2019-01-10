@@ -1,0 +1,95 @@
+/* -- Case-study Styling
+------------------------------------- -- */
+
+.p-case-study {
+    &.main {
+        padding-bottom: 0;
+    }
+}
+
+.case-studies {
+    .container {
+        .row {
+            .col-md-6 {
+                margin-bottom: 30px;
+            }
+            .pagination-wrapper{
+                margin-top: 30px;
+            }
+            .primary-btn {
+                margin: 2rem 0 3rem;
+            }
+        }
+    }
+}
+
+.details-case-study {
+    padding-bottom: 0;
+}
+
+.details-block-content {
+    margin-bottom: 6rem;
+    .text-content {
+        h2 {
+            margin-bottom: 1.4rem;
+        }
+        h3,
+        p {
+            margin-bottom: 2rem;
+        }
+        .case-study-list-group {
+            padding-left: 20px;
+            margin-bottom: 3rem;
+            li {
+                list-style: disc;
+                line-height: 3.8rem;
+            }
+        }
+    }
+    .img-container {
+        position: relative;
+        border: 1px solid $grey-border-color;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        @include border-radius($radius);
+        @include box-shadow(0, 0, 10px, rgba(0, 0, 0, 0.1));
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgba(255, 255, 255, .5);
+            opacity: 0;
+            transition: all 1s;
+            .magnify {
+                width: 100%;
+                height: 100%;
+                @include flexbox();
+                i {
+                    font-size: 2.4rem;
+                    line-height: 6rem;
+                    color: #ffffff;
+                    width: 6rem;
+                    height: 6rem;
+                    @include border-radius(50%);
+                    @include content-gradient();
+                    text-align: center;
+                    line-height: 6rem;
+                    display: block;
+                    margin: auto;
+                    transition: all 1s;
+                    &:hover {
+                        @include box-shadow(0, 0, 20px, rgba(0, 0, 0, .3));
+                    }
+                }
+            }
+        }
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}

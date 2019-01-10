@@ -1,0 +1,26 @@
+/* -- Browser fixes
+--------------------------------------- -- */
+/* -- ie hacks -- */
+@media screen and (min-width:0\0) {
+    .ip-banner .content .container,
+    .details-banner .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grad-icon::before{
+        background: transparent;
+    }
+    .services .carousel-container .carousel-inner .item:hover .content .grad-icon{
+        color: #ffffff;
+    }
+    .tab-container.type-2 .nav-tabs .nav-item .nav-link.active .img-container .grad-icon,
+    .tab-container.type-2 .nav-tabs .nav-item.visited .nav-link .img-container .grad-icon{
+        color: #ffffff;
+    }
+    .awards .carousel-container .carousel-inner .item .content{
+        height: 15rem;
+    }
+}
+
+/* -- moz hacks -- */
+@media screen and (min--moz-device-pixel-ratio:0) {}

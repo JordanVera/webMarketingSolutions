@@ -1,0 +1,524 @@
+/* -- About Styling
+------------------------------------- -- */
+
+/* -- Clients review -- */
+
+.customer-review {
+    .section-heading {
+        margin-bottom: 4.2rem;
+        padding: 0 15px;
+    }
+    .carousel-container {
+        .carousel-inner {
+            button.slick-arrow {
+                width: 29.5%;
+            }
+            .item {
+                outline: none !important;
+                cursor: grab;
+                &.slick-slide {
+                    opacity: .6;
+                }
+                &.slick-center {
+                    opacity: 1;
+                }
+            }
+        }
+        .primary-btn {
+            margin: 2rem 0 3rem;
+        }
+    }
+}
+
+.review-content {
+    padding: 4rem;
+    background: #ffffff url(../images/reviewers/quotation.png) calc(100% - 3rem) 3.5rem no-repeat;
+    position: relative;
+    @include box-shadow(0, 0, 15px, rgba(0, 0, 0, .05));
+    @include border-radius($radius);
+    margin: 3rem 15px;
+    .review-source {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+    .media {
+        margin-bottom: 2.8rem;
+        .media-body {
+            font-size: 16px;
+            color: $light-grey-txt;
+            font-weight: 300;
+            margin-top: -5px;
+            padding-left: 10px;
+            h4 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        font-style: italic;
+    }
+}
+
+/* -- About-us page styling -- */
+
+.overview {
+    padding-bottom: 5.2rem;
+    .overview-content {
+        margin-bottom: 5.8rem;
+    }
+    .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    .text-content {
+        h2 {
+            margin-bottom: 1.4rem;
+        }
+        h3,
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    .img-container {
+        margin: .5rem 0 2rem;
+        @include border-radius($radius);
+        overflow: hidden;
+    }
+}
+
+.more-about-us {
+    .content-block {
+        div[class^="col-"] {
+            margin-bottom: 30px;
+            .box-with-img {
+                display: block;
+                h4 {
+                    transition: color .3s;
+                }
+                .readmore-btn {
+                    >div {
+                        margin-left: -84px;
+                    }
+                    &:hover {
+                        >div {
+                            margin-left: 1px;
+                        }
+                    }
+                }
+                &:hover {
+                    h4 {
+                        color: $theme-color;
+                    }
+                    .readmore-btn div {
+                        margin-left: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.talent-hunt-banner {
+    padding-bottom: 9rem;
+    .content-block {
+        padding: 4.9rem 15px 5rem;
+        @include border-radius($radius);
+        overflow: hidden;
+        h3 {
+            font-size: 2.8rem;
+            margin-bottom: 1.9rem;
+        }
+        p {
+            margin-bottom: 3.2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+/* -- Awards page styling-- */
+
+.awards-achieved {
+    .row {
+        div[class^="col-"] {
+            margin-bottom: 30px;
+            .content {
+                height: 100%;
+                background: #ffffff;
+                @include border-radius($radius);
+                border: 1px solid $grey-border-color;
+                padding: 3rem;
+                img {
+                    margin-bottom: 2rem;
+                }
+                h3 {
+                    font-family: $primary-font;
+                    color: $theme-color;
+                    margin-bottom: 1.4rem;
+                    span {
+                        display: block;
+                        font-size: 1.5rem;
+                        color: $light-grey-txt;
+                        margin-top: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -- Client reviews styling-- */
+
+.client-reviews {
+    .section-heading {
+        margin-bottom: 4.8rem;
+    }
+    .review-block {
+        .review-content {
+            margin: 15px 0;
+            background-size: 25%;
+        }
+        .primary-btn {
+            margin: 3.5rem 0 3rem;
+        }
+    }
+}
+
+.stars-container {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 3px;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '★★★★★';
+        color: lightgrey;
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '★★★★★';
+        color: #eabe10;
+        overflow: hidden;
+    }
+}
+
+.stars {
+    &-0::after {
+        width: 0%;
+    }
+    &-10::after {
+        width: 10%;
+    }
+    &-20::after {
+        width: 20%;
+    }
+    &-30::after {
+        width: 30%;
+    }
+    &-40::after {
+        width: 40%;
+    }
+    &-50::after {
+        width: 50%;
+    }
+    &-60::after {
+        width: 60%;
+    }
+    &-70::after {
+        width: 70%;
+    }
+    &-80::after {
+        width: 80%;
+    }
+    &-90::after {
+        width: 90%;
+    }
+    &-100::after {
+        width: 100;
+    }
+}
+
+/* -- Why us styling-- */
+
+.why-us-content {
+    padding-bottom: 0;
+}
+
+/* -- Career styling-- */
+
+.p-career {
+    &.main {
+        padding-bottom: 0;
+    }
+}
+
+.job-facilities {
+    div[class^="col-"] {
+        margin-bottom: 3rem;
+    }
+    .content {
+        height: 100%;
+        border: 1px solid $grey-border-color;
+        @include border-radius($radius);
+        padding: 2.7rem 1.5rem 3.2rem;
+        .img-container {
+            @include flexbox();
+            height: 8rem;
+            @include align-items(center);
+            @include justify-content(center);
+            margin-bottom: 1.6rem;
+        }
+        i {
+            display: block;
+            font-size: 5rem;
+            line-height: 8rem;
+            margin-bottom: 1.6rem;
+        }
+        p {
+            color: $dark-grey;
+            font-weight: 400;
+        }
+    }
+}
+
+.quotes-from-team {
+    text-align: center;
+    padding-bottom: 0;
+    .section-heading {
+        margin-bottom: 4.3rem;
+    }
+    .carousel-container {
+        max-width: 610px;
+        margin: 0 auto 7.9rem;
+        .item {
+            .content {
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    span {
+                        font-size: 1.5rem;
+                        display: block;
+                        font-weight: 500;
+                        margin-top: 1.3rem;
+                    }
+                }
+            }
+            outline: none;
+            cursor: grab;
+        }
+    }
+    .slick-list {
+        padding-bottom: 3.5rem;
+    }
+    .slick-dots {
+        bottom: 5px;
+        li {
+            width: 1rem;
+            height: 1rem;
+            button {
+                width: 100%;
+                height: 100%;
+                background: #e1e1e1;
+                @include border-radius(50%);
+                &::before {
+                    display: none;
+                }
+            }
+            &.slick-active {
+                button {
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+}
+
+.team-img {
+    margin: 0 auto;
+}
+
+.vacant-positions {
+    padding-bottom: 4rem;
+    .list-of-jobs {
+        padding-top: .2rem;
+        .position {
+            border-bottom: 1px solid $grey-border-color;
+            margin-bottom: 4.2rem;
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+            h3 {
+                margin-bottom: 1rem;
+                span {
+                    font-family: $primary-font;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 3rem;
+                    color: $light-grey-txt;
+                    font-weight: 300;
+                }
+            }
+            p {
+                margin-bottom: 2.5rem;
+            }
+            .primary-btn {
+                line-height: 4rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+/* -- Team page styling -- */
+
+.team-gridder {
+    padding-top: 6.7rem;
+    .gridder {
+        margin: 0 -15px;
+        .gridder-expanded-content {
+            padding: 2.8rem 3rem 3rem;
+            border: 1px solid $grey-border-color;
+            @include border-radius($radius);
+            h3 {
+                margin-bottom: 2rem;
+                span {
+                    font-family: $primary-font;
+                    font-size: 1.7rem;
+                    line-height: 1.5;
+                    color: $light-grey-txt;
+                    font-weight: 300;
+                    display: block;
+                    margin-top: .5rem;
+                }
+            }
+            p {
+                margin-bottom: 1.5rem;
+            }
+            .nav-social-links {
+                margin-top: 3rem;
+                padding-bottom: 0;
+                a {
+                    margin-left: 0;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+        .gridder-padding {
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+        .gridder-nav {
+            display: none;
+        }
+        .gridder-navigation {
+            text-align: right;
+            width: 100%;
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            .gridder-close {
+                position: relative;
+                font: normal normal normal 14px/1 FontAwesome;
+                color: $theme-color;
+                cursor: pointer;
+                font-size: 16px;
+                &::after {
+                    content: "\f00d";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #ffffff;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .team-title {
+            h3 {
+                padding: 0 15px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+        .gridder-list {
+            width: 25%;
+            margin: 0;
+            padding: 0 15px;
+            margin-bottom: 30px;
+            display: inline-block;
+            vertical-align: top;
+            &.selectedItem {
+                position: relative;
+                &::before,
+                &::after {
+                    content: " ";
+                    width: 0;
+                    height: 0;
+                    border-left: 11px solid transparent;
+                    border-right: 11px solid transparent;
+                    border-bottom: 16px solid $grey-border-color;
+                    position: absolute;
+                    bottom: -31px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                }
+                &::after {
+                    content: " ";
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 15px solid #ffffff;
+                    bottom: -32px;
+                    z-index: 9;
+                }
+            }
+            .inner-content {
+                position: relative;
+                img {
+                    width: 100%;
+                    @include border-radius($radius);
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    @include border-radius($radius);
+                    @include flexbox();
+                    @include align-items(center);
+                    @include justify-content(center);
+                    opacity: 0;
+                    transition: opacity .5s;
+                    .secondary-btn {
+                        line-height: 4rem;
+                        padding: 0 2.5rem;
+                        border: none;
+                        &:hover {
+                            background-color: #ffffff;
+                            background-image: none;
+                            color: $theme-color;
+                        }
+                    }
+                }
+                &:hover {
+                    .overlay {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

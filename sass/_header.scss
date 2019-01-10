@@ -1,0 +1,132 @@
+/* -- Header Styling 
+---------------------------------------- -- */
+
+.header-wrapper {
+    width: 100%;
+    @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.1));
+    background: #ffffff;
+    z-index: 3000;
+    &.fixed-top {
+        top: 0;
+        left: auto;
+        right: auto;
+    }
+    .header-top {
+        height: 9rem;
+        border-bottom: 1px solid #ececec;
+        .navbar-brand {
+            img {
+                max-width: 210px;
+                display: none;
+            }
+            svg {
+                width: 100%;
+                max-width: 14.5rem;
+                .cls-2 {
+                    fill: $theme-color;
+                }
+                .cls-1 {
+                    fill: #7d7d7d;
+                }
+            }
+        }
+        .contact-numb {
+            font-size: 1.8rem;
+            line-height: 1;
+            font-weight: 600;
+            color: $dark-grey;
+            align-items: center;
+            white-space: nowrap;
+            i {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        }
+        .primary-btn {
+            line-height: 40px;
+            margin-left: 3rem;
+        }
+        .mm-toggler {
+            margin: 0 0 0 3rem!important;
+        }
+        .header-top-icon {
+            fill: #5d87ff;
+        }
+        .header-top-icon-2 {
+            fill: #256782;
+        }
+    }
+    .navbar {
+        padding: 0;
+        .nav-item {
+            .nav-link {
+                padding: 0;
+                transition: all .3s;
+                position: relative;
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    top: -1px;
+                    left: auto;
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    display: block;
+                    background: $theme-color;
+                    transition: all .5s;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+            &.active {
+                .nav-link::after{
+                    width: 100%;
+                }
+            }
+        }
+        button {
+            .toggler-icon {
+                transition: all .5s;
+            }
+            &.change {
+                .bar1 {
+                    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+                    transform: rotate(-45deg) translate(-6px, 5px);
+                }
+                .bar2 {
+                    opacity: 0;
+                    -webkit-transform: translateX(-100px);
+                    transform: translateX(-100px);
+                }
+                .bar3 {
+                    -webkit-transform: rotate(45deg) translate(-5px, -4px);
+                    transform: rotate(45deg) translate(-5px, -4px);
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none!important;
+        cursor: pointer;
+        margin: 6px;
+        padding: 0;
+        span.toggler-icon {
+            width: 22px;
+            height: 3px;
+            display: block;
+            background: $theme-color;
+            margin: 4px 0;
+            @include border-radius(50px);
+        }
+    }
+}
+.navbar-toggler-icon{
+    background-image: none!important;
+}

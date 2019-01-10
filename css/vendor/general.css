@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'general';
+  src: url('../fonts/general.eot?480vw4');
+  src: url('../fonts/general.eot?480vw4#iefix') format('embedded-opentype'), url('../fonts/general.ttf?480vw4') format('truetype'), url('../fonts/general.woff?480vw4') format('woff'), url('../fonts/general.svg?480vw4#general') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'general' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Attachment:before {
+  content: "\e900";
+}
+
+.icon-Backspace:before {
+  content: "\e901";
+}
+
+.icon-Binoculars:before {
+  content: "\e902";
+}
+
+.icon-Bookmark:before {
+  content: "\e903";
+}
+
+.icon-Compose:before {
+  content: "\e904";
+}
+
+.icon-Crosshair:before {
+  content: "\e905";
+}
+
+.icon-Crown:before {
+  content: "\e906";
+}
+
+.icon-Cursor:before {
+  content: "\e907";
+}
+
+.icon-Dislike:before {
+  content: "\e908";
+}
+
+.icon-Emoji:before {
+  content: "\e909";
+}
+
+.icon-Flag---Alt:before {
+  content: "\e90a";
+}
+
+.icon-Flag:before {
+  content: "\e90b";
+}
+
+.icon-Flash:before {
+  content: "\e90c";
+}
+
+.icon-Guard:before {
+  content: "\e90d";
+}
+
+.icon-Half-Star:before {
+  content: "\e90e";
+}
+
+.icon-Heart:before {
+  content: "\e90f";
+}
+
+.icon-Key:before {
+  content: "\e910";
+}
+
+.icon-Like:before {
+  content: "\e911";
+}
+
+.icon-Link:before {
+  content: "\e912";
+}
+
+.icon-Lock:before {
+  content: "\e913";
+}
+
+.icon-Loupe:before {
+  content: "\e914";
+}
+
+.icon-More---Alt:before {
+  content: "\e915";
+}
+
+.icon-More:before {
+  content: "\e916";
+}
+
+.icon-Move:before {
+  content: "\e917";
+}
+
+.icon-Pencil:before {
+  content: "\e918";
+}
+
+.icon-Settings:before {
+  content: "\e919";
+}
+
+.icon-Shield:before {
+  content: "\e91a";
+}
+
+.icon-Star:before {
+  content: "\e91b";
+}
+
+.icon-Tag:before {
+  content: "\e91c";
+}
+
+.icon-Target:before {
+  content: "\e91d";
+}
+
+.icon-Ticket:before {
+  content: "\e91e";
+}
+
+.icon-Trash:before {
+  content: "\e91f";
+}
+
+.icon-Trophy:before {
+  content: "\e920";
+}
+
+.icon-Unlink:before {
+  content: "\e921";
+}
+
+.icon-Unlock:before {
+  content: "\e922";
+}
+
+.icon-View:before {
+  content: "\e923";
+}
+
+.icon-Warning:before {
+  content: "\e924";
+}
+
+.icon-Wranch:before {
+  content: "\e925";
+}
+
+.icon-Zoom-In:before {
+  content: "\e926";
+}
+
+.icon-Zoom-Out:before {
+  content: "\e927";
+}

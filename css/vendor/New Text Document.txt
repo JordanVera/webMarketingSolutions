@@ -1,0 +1,53 @@
+@media screen and (min-width:0\0) {
+
+    .banner .release-info {
+        position: relative;
+        z-index: 1;
+        &::after {
+            background: url(../images/grad-pattern1.jpg) center center no-repeat;
+            background-size: cover;
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            opacity: .3;
+        }
+    }
+
+    .templates .grid .grid-item .content .inner-content .img-container.blank div {
+        background: transparent;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#0000FF, direction=45);
+        color: #cccccc;
+        text-shadow: 1px 1px white, -1px -1px #777777;
+    }
+
+    .box-content-wrapper {
+        .content.content-with-grad {
+            position: relative;
+            z-index: 1;
+            &::after {
+                background: url(../images/grad-pattern1.jpg) center center no-repeat;
+                background-size: cover;
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                display: block;
+                opacity: .3;
+            }
+            &.grad-2 {
+                &::after {
+                    background: url(../images/grad-pattern2.jpg) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+/* -- Typography Styling
+-------------------------------------- -- */
+
+html {
+    font-family: $primary-font;
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: $primary-font;
+}
+
+.navbar {
+    .nav-item {
+        .nav-link {
+            font-size: 1.6rem;
+            line-height: 5rem;
+            color: $dark-grey;
+            font-weight: 400;
+            text-transform: capitalize;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+        &.active {
+            .nav-link {
+                color: $theme-color;
+                ;
+            }
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $secondary-font;
+}
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    color: #111111;
+}
+
+h1 span,
+h2 span {
+    color: $theme-color;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    color: $dark-grey;
+    font-weight: 400;
+}
+
+.grad-bg h2 {
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: $dark-grey;
+    a {
+        color: $dark-grey;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+h4 {
+    font-family: $primary-font;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: $dark-grey;
+    a {
+        color: $dark-grey;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.2rem;
+}
+.more-features {
+    .more-feature-content-block {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    color: $para-color;
+}
+
+.banner p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.section-heading {
+    h2 {
+        span {
+            color: $theme-color;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #777777;
+        font-weight: 400;
+    }
+}
+
+.hyperlink {
+    a {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        color: $theme-color;
+        text-transform: uppercase;
+    }
+}
+
+ul {
+    list-style: none;
+    li {
+        font-size: 1.7rem;
+        color: $para-color;
+        font-weight: 300;
+    }
+}

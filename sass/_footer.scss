@@ -1,0 +1,168 @@
+/* -- Footer Styling
+------------------------------------- -- */
+
+.page-footer {
+    width: 100%;
+    background-color: $dark-grey-bg;
+    position: fixed;
+    bottom: 0;
+    z-index: -999999;
+    .footer-top {
+        padding-top: 5.4rem;
+        border-bottom: 1px solid #413f48;
+        .navbar-brand {
+            margin-top: -5px;
+            img{
+                display: none;
+            }
+            svg {
+                width: 100%;
+                max-width: 14.5rem;
+                .cls-2 {
+                    fill: $theme-color;
+                }
+                .cls-1 {
+                    fill: #8b8b8b;
+                }
+            }
+        }
+        .navbar-nav{
+            justify-content: flex-end;
+            .nav-item{
+                margin-left: 3rem;
+                .nav-link{
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #ffffff;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+    .footer-mid {
+        border-bottom: 1px solid #413f48;
+        .footer-mid-nav{
+            padding: 3.1rem 0;
+            .nav-item{
+                &:first-child{
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #ffffff;
+                    margin-bottom: 1.2rem;
+                }
+                .nav-link{
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $footer-list-color;
+                    padding: 0;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            &.partners-list{
+                .nav-item{
+                    &:first-child{
+                        margin-bottom: 2rem;
+                    }
+                    .nav-link{
+                        line-height: 1;
+                        margin-bottom: 15px;
+                        &:hover{
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 2.9rem 0 2rem;
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            color: #ffffff;
+            margin-bottom: 3px;
+        }
+        .footer-bottom-links{
+            a{
+                font-size: 16px;
+                line-height: 30px;
+                color: $footer-list-color;
+                margin-right: 15px;
+                font-weight: 300;
+                &:hover{
+                    color: $theme-color;
+                }
+                &.active{
+                    color: $theme-color;
+                }
+            }
+        }
+        .footer-bottom-icons{
+            a{
+                width: 4rem;
+                height: 4rem;
+                font-size: 16px;
+                line-height: 4rem;
+                display: block;
+                text-align: center;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                border-radius: 5px;
+                margin-left: 1px;
+                i{
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                }
+                &:first-child{
+                    margin-left: -1.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* -- Floating footer form Styling
+------------------------------------- -- */
+.floating-footer-form {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 1200;
+    .form-heading{
+        padding: 3rem 4rem;
+        @include box-shadow(0, 0, 10px, rgba(0, 0, 0, .06));
+        border-radius: 5px 5px 0 0;
+        .primary-btn{
+            color: #ffffff;
+            &:hover{
+                color: #ffffff;
+            }
+        }
+    }
+}
+.footer-modal{
+    background: rgba(255,255,255,.9);
+    z-index: 99999999;
+    .contact-form-modal{
+        max-width: 1140px;
+        width: 100%;
+        min-height:100%;
+        margin: 0 auto;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        height: 100vh;
+        .form-content{
+            width: 100%;
+        }
+    }
+}

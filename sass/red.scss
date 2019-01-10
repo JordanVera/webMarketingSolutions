@@ -1,0 +1,96 @@
+/*-- ===============================================
+
+Product: 'SEO Tropica – SEO Template for SEO/Digital Marketing Agency'
+Version: 1.0 
+Author: axilweb
+Date Created: January 29, 2018
+
+==================================================== --*/
+
+/*-- == Table of contents =====================
+
+( Example: Type 'ctrl+f' and then '1.example' to jump to the
+ "example" section. Click 'find' if needed.)
+ 
+1.Custom Animations
+2.Basic Styling
+3.Typography Styling
+4.Button Styling
+5.Forms Styling
+6.Header Styling 
+7.Fullscreen menu Styling 
+8.tab-content styling
+9.Banner styling
+10.Blog styling
+11.Blog page styling
+12.Blog details page styling
+13.Site-performance Styling
+14.Our Approach styling
+15.roi-driven-optimization styling
+16.Mission Styling 
+17.featured Styling 
+18.Counter box styling
+19.awards Styling 
+20.Services styling
+21.Services-seo Styling
+22.Case-study Styling
+23.About Styling
+24.Pricing styling
+25.Our work styling
+26.Contact styling
+27.Other Pages styling
+28.Footer Styling
+29.Floating footer form Styling
+30.Browser fixes
+
+
+================================================== --*/
+
+/* -- Imported Fonts
+-------------------------------------- -- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Vesper+Libre:400,500,700,900');
+// Sass Files to Import
+
+//Common files
+@import 'variables-red';
+@import 'mixins-red';
+@import 'base';
+@import 'typography';
+@import 'button';
+@import 'forms';
+@import 'header';
+@import 'fullscreenmenu';
+@import 'tab-contents';
+@import 'banner';
+@import 'blog';
+
+//Home
+@import 'home';
+
+//Services
+@import 'services';
+
+// Case study
+@import 'case-study';
+
+//About
+@import 'about';
+
+//Pricing
+@import 'pricing';
+
+//Our-work
+@import 'our-work';
+
+//Contact
+@import 'contact';
+
+//Others
+@import 'others';
+
+//Common footer
+@import 'footer';
+
+//Browser fixes
+@import 'browserfixes';

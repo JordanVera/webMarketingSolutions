@@ -1,0 +1,85 @@
+/* -- Other Pages styling
+--------------------------------- -- */
+
+/* -- Faqs Page styling -- */
+
+.faqs{
+    padding-bottom: 0;
+    .accordion-container{
+        margin-bottom: 8.5rem;
+        h2{
+            margin-bottom: 6.2rem;
+        }
+    }
+}
+
+/* -- Terms and conditions page styling -- */
+
+.terms-privacy-content{
+    .content-block{
+        margin-bottom: 3.4rem;
+        h2{
+            margin-bottom: 1.2rem;
+        }
+        p{
+            margin-bottom: 1.5rem;
+        }
+        .list-group{
+            padding-left: 20px;
+            li{
+                list-style: disc;
+                line-height: 3.8rem;
+            }
+        }
+    }
+}
+
+.p-under-construction{
+    .fullscreen-banner{
+        h1{
+            color: $theme-color;
+            line-height: 6rem;
+            span{
+                display: block;
+                font-size: 2.8rem;
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+.p-404-error{
+    .fullscreen-banner.banner-404{
+        padding-top: 10.5rem;
+        display: block;
+        .container{
+            position: relative;
+        }
+        h1{
+            margin-bottom: .3rem;
+            span{
+                font-size: 20rem;
+                line-height: 15.3rem;
+                display: block;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            margin-bottom: 4.2rem;
+        }
+        img{
+            position: relative;
+            bottom: 125px;
+            &.floating-ballon{
+                position: absolute;
+                top: -27rem;
+                right: 0;
+                -webkit-animation: float linear infinite;
+                animation: float linear infinite;
+                -webkit-animation-duration: 5s;
+                animation-duration: 5s;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,73 @@
+/* -- Pricing styling
+--------------------------------- -- */
+.p-pricing{
+    &.main{
+        padding-bottom: 0;
+    }
+}
+.pricing-plan{
+    .pricing-container{
+        .col-md-6{
+            margin-bottom: 30px;
+        }
+        .pricing-table{
+            @include flexbox();
+            @include flex-direction(column);
+            height: 100%;
+            border: 1px solid $grey-border-color;
+            @include border-radius($radius);
+            text-align: center;
+            h3{
+                font-family: $primary-font;
+                line-height: 7.2rem;
+            }
+            .price{
+                font-size: 3.8rem;
+                line-height: 10.6rem;
+                color: #ffffff;
+                font-weight: 500;
+                @include content-gradient();
+                position: relative;
+                sup{
+                    font-size: 1.6rem;
+                    margin-right: .8rem;
+                    top: -1.4rem;
+                }
+                sub{
+                    font-size: 1.6rem;
+                    bottom: 0;
+                    right: 1rem;
+                    font-weight: 300;
+                }
+            }
+            .what-is-included{
+                padding: 1.3rem 3rem 0 4.5rem;
+                text-align: left;
+                margin-bottom: 1.5rem;
+                li{
+                    font-size: 1.5rem;
+                    line-height: 4rem;
+                    list-style: disc;
+                }
+            }
+            .secondary-btn{
+                line-height: 4.2rem;
+                margin: auto 3rem 3rem;
+                text-align: center;
+                padding: 0;
+            }
+            &.featured{
+                border-color: $theme-color;
+                .secondary-btn{
+                    line-height: 4.4rem;
+                    color: #ffffff;
+                    border: none;
+                    @include content-gradient();
+                }
+                &::after{
+                    content: "Popular";
+                }
+            }
+        }
+    }
+}

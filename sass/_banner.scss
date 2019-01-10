@@ -1,0 +1,447 @@
+/* -- Banner styling
+---------------------------------- -- */
+
+.banner {
+    height: calc( 100vh - 360px);
+    min-height: 600px;
+    background: #ffffff;
+    overflow: hidden;
+    .banner-content {
+        h1 {
+            margin-bottom: 1.2rem;
+            max-width: 540px;
+        }
+        p {
+            margin-bottom: 4.1rem;
+        }
+        .primary-btn {
+            margin-bottom: 3rem;
+        }
+    }
+    .banner-slider {
+        position: relative;
+        .search-content {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            position: absolute;
+            top: 0;
+            left: 18%;
+            .search-box-container {
+                padding: 15px 30px;
+                background: #f5f5f5;
+                position: absolute;
+                right: 12px;
+                left: 12px;
+                top: 47px;
+                .search-box {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 25px;
+                    border: 1px solid $grey-border-color;
+                    background: #ffffff;
+                    .typed {
+                        position: absolute;
+                        top: 50%;
+                        left: 45px;
+                        font-size: 1.5rem;
+                        line-height: 20px;
+                        color: $dark-grey;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .search-slider {
+                position: absolute;
+                top: 100px;
+                bottom: 56px;
+                left: 12px;
+                right: 12px;
+                overflow: hidden;
+                background: #fafafa;
+                img {
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                    transition: all 2s;
+                    &.hide-img {
+                        opacity: 0;
+                    }
+                    &.show-img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -- Inner page banner -- */
+
+.ip-banner {
+    height: 430px;
+    background-color: #eeeeee;
+    position: relative;
+    .content {
+        width: 100%;
+        height: 100%;
+        @include content-gradient-trp();
+        h1 {
+            color: #ffffff;
+            margin-bottom: 11px;
+        }
+        p {
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+}
+
+/* -- fullscreen-banner -- */
+
+.fullscreen-banner {
+    height: calc(100vh - 14rem);
+    @include flexbox();
+    @include align-items(center);
+}
+
+/* -- measure-performance-banner -- */
+
+.measure-performance-banner {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    .content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        h1 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 3.5rem;
+        }
+    }
+    .site-performance {
+        height: auto;
+        form {
+            .form-control {
+                color: $theme-color;
+            }
+            button {
+                right: -2px;
+                width: 6rem;
+                @include content-gradient();
+                @include border-radius(0 50px 50px 0);
+                i {
+                    font-size: 2.2rem;
+                    line-height: 5.6rem;
+                    color: #fff;
+                    transition: all .2s;
+                }
+                &:hover {
+                    transform: none;
+                    i {
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.measure-performance-banner .embed-responsive {
+    position: relative;
+    height: 56.25%;
+    overflow: hidden;
+}
+
+.measure-performance-banner .embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    .breadcrumb-item {
+        font-size: 13px;
+        line-height: 54px;
+        color: #ffffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: inline-block;
+        float: none;
+        &::before {
+            display: none;
+        }
+        a {
+            color: #ffffff;
+            i {
+                padding: 0 5px;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+.fullscreen-banner p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-bottom: 4.1rem;
+}
+
+.banner-with-form .form-content {
+    padding: 0;
+}
+
+.banner-with-form .form-content .form-container {
+    padding: 3rem 4rem .5rem;
+}
+
+.banner-with-form .form-content h3 {
+    color: $theme-color;
+    padding: 2.5rem 4rem 1.5rem;
+    position: relative;
+}
+
+.banner-with-form .form-content h3::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    display: block;
+    @include content-gradient();
+}
+
+.banner-with-form p {
+    opacity: .6;
+}
+
+.banner-with-form .submit-loader {
+    left: 50%;
+    margin-left: -15px;
+    bottom: 5px;
+}
+
+.carousel.banner-carousel h1 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+    transition: all 1s;
+}
+
+.carousel.banner-carousel p,
+.carousel.banner-carousel .primary-btn {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    transition: all 1s;
+}
+
+.carousel.banner-carousel .active.active-anim h1,
+.carousel.banner-carousel .active.active-anim p,
+.carousel.banner-carousel .active.active-anim .primary-btn {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel.banner-carousel img {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    transition: all 1s;
+}
+
+.carousel.banner-carousel .active.active-anim img {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 6rem;
+}
+
+/* -- Banner carousel -- */
+
+.carousel.banner-carousel {
+    margin: 0;
+    position: relative;
+}
+
+.carousel.banner-carousel .carousel-inner {
+    border: none;
+    border-radius: 0;
+}
+
+.carousel.banner-carousel .carousel-indicators {
+    position: absolute;
+}
+
+.seo-banner {
+    background: #eeeeee url(../images/inner-banner/seo.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.case-study-banner {
+    background: #eeeeee url(../images/inner-banner/case-study.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.email-marketing-banner {
+    background: #eeeeee url(../images/inner-banner/email-marketing.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.ppc-banner {
+    background: #eeeeee url(../images/inner-banner/ppc.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.smm-banner {
+    background: #eeeeee url(../images/inner-banner/smm.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.reporting-banner {
+    background: #eeeeee url(../images/inner-banner/reporting.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.pricing-banner {
+    background: #eeeeee url(../images/inner-banner/pricing.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.about-us-banner {
+    background: #eeeeee url(../images/inner-banner/about-us.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.awards-banner {
+    background: #eeeeee url(../images/inner-banner/awards-banner.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.client-reviews-banner {
+    background: #eeeeee url(../images/inner-banner/client-reviews.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.why-us-banner {
+    background: #eeeeee url(../images/inner-banner/why-us.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.web-development-banner {
+    background: #eeeeee url(../images/inner-banner/web-development.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.contact-banner {
+    background: #eeeeee url(../images/inner-banner/contact-us.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.our-work-banner {
+    background: #eeeeee url(../images/inner-banner/our-work.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.team-banner {
+    background: #eeeeee url(../images/inner-banner/team.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.career-banner {
+    background: #eeeeee url(../images/inner-banner/career-banner.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.banner-with-form {
+    background: #eeeeee url(../images/inner-banner/banner-with-form.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.banner-slide-1 {
+    background: #eeeeee url(../images/inner-banner/banner-slide-1.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.banner-slide-2 {
+    background: #eeeeee url(../images/inner-banner/banner-slide-2.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.measure-performance-banner {
+    background: #eeeeee url(../images/inner-banner/measure-performance-banner.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.p-404-error.main {
+    background: url(../images/404-banner.jpg) center top repeat-x;
+    background-size: cover;
+    -webkit-animation: bg-animate 50s linear infinite;
+    animation: bg-animate 50s linear infinite;
+}
+
+.details-banner {
+    position: relative;
+    @include content-gradient();
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 45px 0;
+        @include content-gradient-trp();
+        h1 {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+    .post-info {
+        margin-top: 1rem;
+        a {
+            font-size: 16px;
+            line-height: 2.8rem;
+            color: #ffffff;
+            font-weight: 400;
+            white-space: nowrap;
+            margin-right: 1.5rem;
+            &:hover {
+                opacity: .7;
+            }
+            i {
+                font-size: 1.4rem;
+                margin-right: .8rem;
+            }
+        }
+    }
+}

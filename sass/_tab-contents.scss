@@ -1,0 +1,199 @@
+/* -- tab-content styling
+------------------------------------ -- */
+
+.tab-container {
+    &.type-1 {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        .nav-tabs {
+            width: 100%;
+            border: none;
+            @include border-radius($radius);
+            @include box-shadow(0, 2px, 10px, rgba(0, 0, 0, .075));
+            overflow: hidden;
+            .nav-item {
+                background: #ffffff;
+                .nav-link {
+                    height: 100%;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    color: $para-color;
+                    text-align: center;
+                    padding: 3rem 1.5rem 2.5rem;
+                    border: none;
+                    border-bottom: 3px solid transparent;
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        bottom: 0px;
+                        left: auto;
+                        right: 0;
+                        width: 0;
+                        height: 3px;
+                        display: block;
+                        background: $theme-color;
+                        -webkit-transition: all .5s;
+                        -o-transition: all .5s;
+                        transition: all .5s;
+                    }
+                    &:hover {
+                        background-color: $grey-bg;
+                        &::after{
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                    &.active {
+                        background: $grey-bg;
+                        border-color: $theme-color;
+                        color: $theme-color;
+                    }
+                    img {
+                        display: block;
+                        height: 38px;
+                        margin: 0 auto 14px;
+                    }
+                    i {
+                        display: block;
+                        font-size: 4rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    &.type-2 {
+        padding-bottom: 6rem;
+        background: #ffffff;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        .nav-tabs {
+            width: 100%;
+            border: none;
+            margin-top: -4.75rem;
+            @include border-radius($radius);
+            .nav-item {
+                position: relative;
+                z-index: 2;
+                .nav-link {
+                    height: 100%;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    color: $para-color;
+                    text-align: center;
+                    padding: 0 1.5rem;
+                    border: none;
+                    &.active {
+                        background: transparent;
+                        color: $theme-color;
+                        .img-container {
+                            @include content-gradient();
+                            i {
+                                &::before {
+                                    -webkit-text-fill-color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                    .img-container {
+                        width: 9.5rem;
+                        height: 9.5rem;
+                        background: #ffffff;
+                        margin: 0 auto;
+                        @include flexbox();
+                        @include border-radius(50%);
+                        @include box-shadow(0, 2px, 10px, rgba(0, 0, 0, .075));
+                        transition: all .5s;
+                        i {
+                            width: 100%;
+                            font-size: 4rem;
+                            line-height: 9.5rem;
+                            display: block;
+                        }
+                    }
+                    span {
+                        font-size: 1.7rem;
+                        line-height: 3rem;
+                        font-weight: 400;
+                        display: block;
+                        margin-top: 10px;
+                    }
+                }
+                &:not(:last-child)::before,
+                &:not(:last-child)::after {
+                    content: " ";
+                    position: absolute;
+                    top: 4.8rem;
+                    left: 9.5rem;
+                    width: 100%;
+                    height: 4px;
+                    background: #e6e6e6;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    z-index: -1;
+                    transition: all .5s;
+                }
+                &:not(:last-child)::after {
+                    background-color: $theme-color;
+                    width: 0;
+                }
+                &.visited {
+                    .nav-link {
+                        color: $theme-color;
+                    }
+                    .img-container {
+                        @include content-gradient();
+                        i {
+                            &::before {
+                                -webkit-text-fill-color: #ffffff;
+                            }
+                        }
+                    }
+                    &:not(:last-child)::before {
+                        background-color: $theme-color;
+                    }
+                    &:not(:last-child)::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        width: 100%;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        .tab-pane {
+            width: 100%;
+            .text-content {
+                h3 {
+                    margin-bottom: 2rem;
+                }
+                p {
+                    margin-bottom: 2rem;
+                }
+                .seo-list-box {
+                    li {
+                        position: relative;
+                        line-height: 4rem;
+                        padding-left: 2.5rem;
+                        i {
+                            font-size: 1.7rem;
+                            line-height: 2.8rem;
+                            color: $para-color;
+                            position: absolute;
+                            top: 7px;
+                            left: -2px;
+                        }
+                        span {
+                            color: $dark-grey;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
