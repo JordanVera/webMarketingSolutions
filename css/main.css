@@ -2164,7 +2164,7 @@ input[type=file] {
   border-bottom: 3px solid transparent;
 }
 
-.tab-container.type-1 .nav-tabs .nav-item .nav-link::after {
+/* .tab-container.type-1 .nav-tabs .nav-item .nav-link::after {
   content: " ";
   position: absolute;
   bottom: 0px;
@@ -2177,7 +2177,7 @@ input[type=file] {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-}
+} */
 
 .tab-container.type-1 .nav-tabs .nav-item .nav-link:hover {
   background-color: #f9fafb;
