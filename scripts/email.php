@@ -45,7 +45,7 @@ if ($name == "") {
     $msg['field'] = "message";
     $msg['code'] = FALSE;
 } else {
-    $to = 'user@example.com';
+    $to = 'verawebdevelopment@gmail.com';
     $subject = 'Contact Query';
     $message = '<html><head></head><body>';   
     
